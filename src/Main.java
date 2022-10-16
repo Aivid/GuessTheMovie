@@ -6,9 +6,8 @@ public class Main {
 
         //Declare global variables
         int numOfMovies = 0;
-        int randomMovie = 0;
+        int randomMovie;
         String selectedMovie ="";
-        String movies = "";
 
 
         //Initialize classes
@@ -17,9 +16,8 @@ public class Main {
 
         //Get number of movies
         while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
+            scanner.nextLine();
 
-            movies += (line + "\n");
             numOfMovies++;
         }
 
